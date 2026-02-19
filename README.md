@@ -26,23 +26,25 @@ stays exactly as-is.
 
 ## DragonOS Noble Quick Start
 
-On [DragonOS Noble](https://sourceforge.net/projects/dragonos-focal/),
-`tetra-rx`, `telive`, and the TETRA speech codec will be included in a
-future release. Until then, follow
-[this PR](https://github.com/sq5bpf/telive-2/pull/5) to build and install
-the TETRA stack on DragonOS Noble.
+[DragonOS Noble](https://sourceforge.net/projects/dragonos-focal/) already
+has `libliquid-dev` and `librtlsdr-dev` installed. You just need the TETRA
+stack (`tetra-rx`, `telive`, speech codec) and tetra-rtlsdr.
 
-Once the TETRA stack is installed, build tetra-rtlsdr:
+**1. Install the TETRA stack** — follow
+[this guide](https://github.com/sq5bpf/telive-2/pull/5) to build
+`osmo-tetra-sq5bpf-2`, `telive-2`, and the TETRA speech codec on
+DragonOS Noble.
+
+**2. Build tetra-rtlsdr:**
 
 ```bash
-sudo apt install libliquid-dev
 git clone https://github.com/alphafox02/tetra-rtlsdr
 cd tetra-rtlsdr
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 ```
 
-Now follow the steps below to scan, decode, and monitor TETRA.
+That's it. Now follow the steps below to scan, decode, and monitor TETRA.
 
 ---
 
