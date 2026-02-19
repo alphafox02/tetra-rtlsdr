@@ -2,7 +2,7 @@
 
 *This one's for you Rob and Carl*
 
-RTL-SDR front-end for the [telive](https://github.com/sq5bpf/telive) /
+RTL-SDR front-end for the [telive-2](https://github.com/sq5bpf/telive-2) /
 [osmo-tetra-sq5bpf-2](https://github.com/sq5bpf/osmo-tetra-sq5bpf-2) TETRA
 receiver stack by **Jacek Lipkowski SQ5BPF** (<sq5bpf@lipkowski.org>).
 
